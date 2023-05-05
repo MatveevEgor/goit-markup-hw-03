@@ -104,7 +104,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding-top: 24px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
 }
 
 .menu-item:hover,
@@ -128,7 +128,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding-top: 24px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
 }
 
 .contacts-link .link:hover,
@@ -168,9 +168,6 @@ img {
 
 .hero {
   background-color: var(--background-dark-color);
-}
-
-.hero-container {
   padding-top: 188px;
   padding-bottom: 188px;
 }
