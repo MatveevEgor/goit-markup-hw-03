@@ -63,7 +63,7 @@ img {
 
 .page-header {
   padding-top: 24px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -76,7 +76,6 @@ img {
   color: var(--title-menu-text-color-navy-blue);
   display: flex;
   align-items: center;
-  column-gap: 76px;
 }
 
 .logo {
@@ -87,6 +86,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo-header {
@@ -96,7 +96,7 @@ img {
 .menu {
   display: flex;
   align-items: center;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .menu-item {
@@ -121,7 +121,7 @@ img {
 .contacts-link {
   display: flex;
   align-items: center;
-  column-gap: 40px;
+  gap: 40px;
 }  
 
 .contacts-link .link {
@@ -149,7 +149,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding: 11px 23px;
+  padding: 12px 24px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
 }
@@ -158,7 +158,7 @@ img {
 .filter-button:focus {
   background-color: var(--button-pressed-state-color-ocean);
   color: var(--primary-white-background-color);
-  border: 1px solid var(--button-pressed-state-color-ocean);
+  border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -170,8 +170,9 @@ img {
   background-color: var(--background-dark-color);
 }
 
-.hero > .hero-container {
-  padding: 188px 15px;
+.hero-container {
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -273,6 +274,10 @@ img {
   gap: 24px;
 }
 
+.examples-work-list-item {
+  flex-basis: calc((100% - 3 * 16px) / 3);
+}
+
 /* ----------------------  /example work  ----------------------- */
 
 /* ----------------------  our team  ----------------------- */
@@ -302,8 +307,8 @@ img {
   padding: 32px 16px;
 }
 
-.our-team-list .text {
-  margin-top: 8px;
+.our-team-list .list-title {
+  margin-bottom: 8px;
 }
 
 /* ----------------------  /our team  ----------------------- */
@@ -323,7 +328,8 @@ img {
 
 .section-portfolio-list {
   display: flex;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   flex-wrap: wrap;
 }
 
@@ -337,8 +343,8 @@ img {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-.section-portfolio-list .text {
-  margin-top: 8px;
+.section-portfolio-list .list-title {
+  margin-bottom: 8px;
 }
 
 /* -------------------  /section-portfolio  -------------------- */
@@ -362,9 +368,13 @@ img {
   text-transform: uppercase;
 }
 
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer .text {
-  margin-top: 16px;
-  width: 264px;
+  max-width: 264px;
 }
 
 /* ----------------------  /footer  ----------------------- */
